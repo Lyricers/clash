@@ -1,0 +1,16 @@
+# Google Voice 主要域名
+DOMAIN,voice.google.com
+DOMAIN,voice-ci.google.com
+
+# Google Voice 可能用到的 STUN 服务器（用于通话）
+DOMAIN,stun.l.google.com
+DOMAIN,stun1.l.google.com
+DOMAIN,stun2.l.google.com
+DOMAIN,stun3.l.google.com
+DOMAIN,stun4.l.google.com
+
+# Google Voice 认证相关（部分 OAuth 登录）
+DOMAIN,oauthaccountmanager.googleapis.com
+
+# 直接匹配 Google Voice App 日志中出现的 IP
+IP-CIDR,216.239.36.145/32,no-resolve
