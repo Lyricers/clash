@@ -9,8 +9,6 @@ DOMAIN-SUFFIX,deepseek.io
 DOMAIN-SUFFIX,deepseek.chat
 DOMAIN-SUFFIX,deepseek.com
 DOMAIN-SUFFIX,volces.com
-
-# 如果 DeepSeek 使用了其他资源域名，可以通过以下方式匹配：
 DOMAIN-SUFFIX,cdn.deepseek.io
 DOMAIN-SUFFIX,cdn.deepseek.chat
 
