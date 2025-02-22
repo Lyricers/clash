@@ -1,0 +1,18 @@
+# DeepSeek 主要域名
+DOMAIN,deepseek.io
+DOMAIN,www.deepseek.io
+DOMAIN,com.deepseek.chat
+DOMAIN,chat.deepseek.com
+
+# 可能的子域名（根据常见模式）
+DOMAIN-SUFFIX,deepseek.io
+DOMAIN-SUFFIX,deepseek.chat
+DOMAIN-SUFDIX,deepseek.com
+DOMAIN-SUFDIX,volces.com
+
+# 如果 DeepSeek 使用了其他资源域名，可以通过以下方式匹配：
+DOMAIN-SUFFIX,cdn.deepseek.io
+DOMAIN-SUFFIX,cdn.deepseek.chat
+
+# 深入匹配 DeepSeek 的 API 域名（如有）
+DOMAIN,api.deepseek.io
