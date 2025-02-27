@@ -115,7 +115,7 @@ function renameNodes(proxies) {
 
         // 8. **低流量警告**
         if (/低流量/.test(name)) {
-            finalName += " 🚫";
+            finalName += " 🚨";
         }
 
         // 9. 按国家分组存储
