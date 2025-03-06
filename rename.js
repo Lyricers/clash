@@ -10,29 +10,31 @@ const excludeKeywords = [
     /网址/, /网站/, /充值/, /更新/, /地址/, /国内/, /永久/, /教学/, /com/, /www/, /69/, /购买/
 ];
 
-// 关键词对应备注
+// 关键词对应备注（已删除“高速”和“低速”）
 const remarkKeywords = [
-    { key: /高速/, value: "HS" },
-    { key: /低速/, value: "LS" },
-    { key: /专线/, value: "DL" },
-    { key: /解锁|流媒体/, value: "Strm" } // 统一处理，避免重复
+    { key: /专线/, value: "DLine" }, // 专线 → DLine
+    { key: /家宽|家庭宽带/, value: "HomB" },
+    { key: /原生/, value: "Natv" },
+    { key: /禁下载/, value: "NoDL" },
+    { key: /可长期下载/, value: "LTDL" },
+    { key: /禁视频/, value: "NoVd" },
+    { key: /下载勿用/, value: "NoDL" }
 ];
 
 // 额外备注关键词
 const extraRemarks = [
     { key: /测试|Test/i, value: "Test" },
     { key: /Unmetered|无限流量/i, value: "UnLD" },
-    { key: /EMBY/i, value: "Emby" },
-    { key: /禁下载|No Download/i, value: "BDl" },
-    { key: /禁视频|No Video/i, value: "BVd" },
-    { key: /可长期下载/i, value: "ADl" }
+    { key: /EMBY/i, value: "Emby" }
 ];
 
-// **服务器提供商列表**
-const serverProviders = [
-    "AWS", "Google Cloud", "Azure", "Alibaba Cloud", "Tencent Cloud", "Cloudflare", "Oracle Cloud",
-    "Linode", "Vultr", "DigitalOcean", "Hetzner", "OVH", "Contabo", "LeaseWeb", "G-Core", "StackPath",
-    "Fastly", "Akamai", "CloudFront", "BunnyCDN"
+// 新增五个高优先级备注
+const highPriorityRemarks = [
+    { key: /IPLC/, value: "IPLC" },
+    { key: /IEPL/, value: "IEPL" },
+    { key: /BGP/, value: "BGP" },
+    { key: /MPLS/, value: "MPLS" },
+    { key: /MSTP/, value: "MSTP" }
 ];
 
 function renameNodes(proxies) {
@@ -49,83 +51,102 @@ function renameNodes(proxies) {
 
         let country = "", flag = "", countryCode = "", countryCN = "";
 
-        // 2. 识别国家
-        for (let i = 0; i < ZH.length; i++) {
-            if (name.includes(ZH[i]) || name.includes(EN[i]) || name.includes(FG[i])) {
-                country = ZH[i];
-                countryCN = ZH[i];
-                flag = FG[i];
-                countryCode = EN[i];
-                break;
+        // 2. **优先使用国旗识别国家**
+        FG.forEach((emoji, index) => {
+            if (name.includes(emoji)) {
+                country = ZH[index];
+                countryCN = ZH[index];
+                flag = emoji;
+                countryCode = EN[index];
             }
+        });
+
+        // 3. **如果国旗未识别到国家，再尝试从名称中提取**
+        if (!country) {
+            ZH.forEach((zhName, index) => {
+                if (name.includes(zhName) || name.includes(EN[index])) {
+                    country = zhName;
+                    countryCN = zhName;
+                    flag = FG[index];
+                    countryCode = EN[index];
+                }
+            });
         }
 
-        // 3. 如果无法识别国家，设为“未知”
+        // 4. **如果仍无法识别国家，设为“未知”**
         if (!country) {
             flag = "🌍";
             countryCN = "未知";
             countryCode = "Unknown";
         }
 
-        // 4. 识别节点类型
+        // 5. 识别节点类型
         let type = "AirP";
         if (/自建/.test(name)) type = "ZiJian";
         else if (/合租/.test(name)) type = "Hezu";
 
-        // 5. 识别备注信息
+        // 6. 识别备注信息
         let remarks = [];
 
-        // 5.1 原有备注匹配
+        // 6.1 原有备注匹配
         extraRemarks.forEach(({ key, value }) => {
             if (key.test(name)) {
                 remarks.push(value);
             }
         });
 
-        // 5.2 关键词备注匹配
+        // 6.2 关键词备注匹配（先匹配高优先级备注）
+        let hasHighPriorityRemark = false;
+        highPriorityRemarks.forEach(({ key, value }) => {
+            if (key.test(name)) {
+                remarks.push(value);
+                hasHighPriorityRemark = true; // 标记已添加高优先级备注
+            }
+        });
+
+        // 6.3 处理“专线”备注（如果已有高优先级备注，就不加 DLine）
         remarkKeywords.forEach(({ key, value }) => {
-            if (key.test(name) && !remarks.includes(value)) {
+            if (key.test(name) && !remarks.includes(value) && !(hasHighPriorityRemark && value === "DLine")) {
                 remarks.push(value);
             }
         });
 
-        // 5.3 额外备注：宽带大小（如 100Mbps、1Gbps）
+        // 6.4 额外备注：宽带大小（如 100Mbps、1Gbps）
         let bandwidthMatch = name.match(/(\d+(\.\d+)?[MG]bps)/i);
         if (bandwidthMatch) {
             remarks.push(bandwidthMatch[1]);
         }
 
-        // 5.4 **匹配服务器提供商**
-        let providerMatch = serverProviders.find(provider => name.includes(provider));
-        if (providerMatch) {
-            remarks.push(providerMatch);
-        }
-
-        // 6. 识别倍率
+        // 7. 识别倍率
         let multiplier = "1.0x";
         let multiplierMatch = name.match(/(?<!\d)(\d+(\.\d+)?)\s?[xX倍](?!\w)/);
         if (multiplierMatch) {
             multiplier = multiplierMatch[1] + "x";
         }
 
-        // 7. 组合最终名称
+        // **当倍率为 0.0x 时，添加无限流量标识，并移除低流量警告**
+        if (multiplier === "0.0x") {
+            remarks.push("UnLD");
+        }
+
+        // 8. 组合最终名称
         let finalName = `${flag} ${countryCN} ${countryCode} ${type}`;
         if (remarks.length > 0) finalName += ` ${remarks.join(" ")}`;
         finalName += ` - ${multiplier}`;
 
-        // 8. **低流量警告**
-        if (/低流量/.test(name)) {
+        // 9. **低流量警告**
+        if (/低流量/.test(name) && multiplier !== "0.0x") {
             finalName += " 🚨";
         }
 
-        // 9. 按国家分组存储
+        // 10. 按国家分组存储
         if (!countryGroups[countryCode]) {
             countryGroups[countryCode] = [];
         }
         countryGroups[countryCode].push({ name: finalName, originalNode: node });
     });
 
-    // 10. 按国家排序编号
+    // 11. **按国家排序编号**
     Object.keys(countryGroups).forEach(countryCode => {
         // 按名称长度排序，短的排前
         countryGroups[countryCode].sort((a, b) => a.name.length - b.name.length);
