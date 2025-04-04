@@ -1,5 +1,161 @@
-#Nodeseek 将Lain.sh的区段IP封禁
+# Nodeseek 将Lain.sh的区段IP封禁
 DOMAIN-SUFFIX,nodeseek.com
 IP-CIDR,104.26.11.72/32
 IP-CIDR,172.67.70.75/32
 IP-CIDR,104.26.10.72/32
+
+
+# 以下均是新闻网站，防机场屏蔽
+# Global Mainstream News Websites
+
+# BBC
+DOMAIN-SUFFIX,bbc.com
+DOMAIN-SUFFIX,bbc.co.uk
+DOMAIN-SUFFIX,bbcchinese.com
+
+# The New York Times
+DOMAIN-SUFFIX,nytimes.com
+DOMAIN-SUFFIX,nyt.com
+DOMAIN-SUFFIX,nytimescn.com
+
+# The Guardian
+DOMAIN-SUFFIX,theguardian.com
+
+# CNN
+DOMAIN-SUFFIX,cnn.com
+DOMAIN-SUFFIX,cnn.io
+
+# Reuters
+DOMAIN-SUFFIX,reuters.com
+
+# The Washington Post
+DOMAIN-SUFFIX,washingtonpost.com
+
+# Bloomberg
+DOMAIN-SUFFIX,bloomberg.com
+DOMAIN-SUFFIX,bloomberg.cn
+
+# The Wall Street Journal
+DOMAIN-SUFFIX,wsj.com
+DOMAIN-SUFFIX,wsj.net
+DOMAIN-SUFFIX,cn.wsj.com
+
+# Financial Times
+DOMAIN-SUFFIX,ft.com
+DOMAIN-SUFFIX,ftchinese.com
+
+# The Economist
+DOMAIN-SUFFIX,economist.com
+
+# Al Jazeera
+DOMAIN-SUFFIX,aljazeera.com
+
+# NHK (Japan)
+DOMAIN-SUFFIX,nhk.or.jp
+DOMAIN-SUFFIX,nhk.jp
+
+# Deutsche Welle (DW)
+DOMAIN-SUFFIX,dw.com
+DOMAIN-SUFFIX,dw.de
+DOMAIN-SUFFIX,dwnews.com
+DOMAIN-SUFFIX,zh.dw.com
+
+# Voice of America (VOA)
+DOMAIN-SUFFIX,voanews.com
+DOMAIN-SUFFIX,voa.com
+DOMAIN-SUFFIX,voachinese.com
+
+# France 24
+DOMAIN-SUFFIX,france24.com
+
+# Associated Press (AP)
+DOMAIN-SUFFIX,apnews.com
+DOMAIN-SUFFIX,ap.org
+
+# ABC News (US & Australia)
+DOMAIN-SUFFIX,abcnews.go.com
+DOMAIN-SUFFIX,abc.net.au
+
+# CBS News
+DOMAIN-SUFFIX,cbsnews.com
+
+# NBC News
+DOMAIN-SUFFIX,nbcnews.com
+
+# Fox News
+DOMAIN-SUFFIX,foxnews.com
+DOMAIN-SUFFIX,fox.com
+
+# MSNBC
+DOMAIN-SUFFIX,msnbc.com
+
+# NPR (National Public Radio)
+DOMAIN-SUFFIX,npr.org
+
+# PBS (Public Broadcasting Service)
+DOMAIN-SUFFIX,pbs.org
+
+# USA Today
+DOMAIN-SUFFIX,usatoday.com
+
+# Los Angeles Times
+DOMAIN-SUFFIX,latimes.com
+
+# Chicago Tribune
+DOMAIN-SUFFIX,chicagotribune.com
+
+# Time Magazine
+DOMAIN-SUFFIX,time.com
+
+# Newsweek
+DOMAIN-SUFFIX,newsweek.com
+
+# The Atlantic
+DOMAIN-SUFFIX,theatlantic.com
+
+# Politico
+DOMAIN-SUFFIX,politico.com
+
+# HuffPost
+DOMAIN-SUFFIX,huffpost.com
+
+# ProPublica
+DOMAIN-SUFFIX,propublica.org
+
+# BuzzFeed News
+DOMAIN-SUFFIX,buzzfeednews.com
+
+# Radio Free Asia (RFA)
+DOMAIN-SUFFIX,rfa.org
+DOMAIN-SUFFIX,rfa.com
+
+# Radio France Internationale (RFI)
+DOMAIN-SUFFIX,rfi.fr
+DOMAIN-SUFFIX,rfi.my
+
+# Canadian Broadcasting Corporation (CBC)
+DOMAIN-SUFFIX,cbc.ca
+
+# Australian Broadcasting Corporation (ABC)
+DOMAIN-SUFFIX,abc.net.au
+
+# South China Morning Post
+DOMAIN-SUFFIX,scmp.com
+
+# Nikkei Asia
+DOMAIN-SUFFIX,asia.nikkei.com
+
+# Additional sites covering China
+DOMAIN-SUFFIX,chinafile.com
+DOMAIN-SUFFIX,sinica.com
+DOMAIN-SUFFIX,sixthtone.com
+DOMAIN-SUFFIX,initium.com
+DOMAIN-SUFFIX,chinadigitaltimes.net
+DOMAIN-SUFFIX,boxun.com
+DOMAIN-SUFFIX,epochtimes.com
+DOMAIN-SUFFIX,ntdtv.com
+DOMAIN-SUFFIX,rfi.fr
+DOMAIN-SUFFIX,rfa.org
+DOMAIN-SUFFIX,voachinese.com
+DOMAIN-SUFFIX,dwnews.com
+DOMAIN-SUFFIX,zh.bitterwinter.org
