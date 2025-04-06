@@ -436,3 +436,21 @@ DOMAIN-SUFFIX,mas.gov.sg
 DOMAIN-SUFFIX,eba.europa.eu
 DOMAIN-SUFFIX,ecb.europa.eu
 DOMAIN-SUFFIX,oecd.org
+
+# 敏感网站封锁列表
+DOMAIN-SUFFIX,turkistanislamicparty.org
+DOMAIN-SUFFIX,uighurcongress.org
+DOMAIN-SUFFIX,eastturkistan.net
+DOMAIN-SUFFIX,savetibet.org
+DOMAIN-SUFFIX,tibetanreview.net
+DOMAIN-SUFFIX,sharnoffsglobalviews.com
+DOMAIN-SUFFIX,pastebin.com
+DOMAIN-SUFFIX,justpaste.it
+DOMAIN-SUFFIX,ghostbin.com
+DOMAIN-SUFFIX,zerobin.net
+DOMAIN-SUFFIX,rentry.co
+DOMAIN-SUFFIX,chinalaborwatch.org
+DOMAIN-SUFFIX,yibaochina.com
+DOMAIN-SUFFIX,pincong.rocks
+DOMAIN-SUFFIX,cdp1998.org
+DOMAIN-SUFFIX,guochan.xyz
