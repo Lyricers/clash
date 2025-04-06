@@ -251,8 +251,6 @@ DOMAIN-SUFFIX,cn.rfi.fr
 # 匹配所有非中国大陆的政府站点（排除 .gov.cn）
 DOMAIN-SUFFIX,gov
 DOMAIN-KEYWORD,.gov.
-# 排除大陆政府网站（可单独 REJECT）
-DOMAIN-SUFFIX,gov.cn
 
 # 台湾政府
 DOMAIN-SUFFIX,gov.tw
@@ -333,10 +331,3 @@ DOMAIN-SUFFIX,mas.gov.sg
 DOMAIN-SUFFIX,eba.europa.eu
 DOMAIN-SUFFIX,ecb.europa.eu
 DOMAIN-SUFFIX,oecd.org
-
-# 排除中国大陆相关的政府域名（可设置为绕过或 REJECT）
-DOMAIN-SUFFIX,gov.cn
-DOMAIN-SUFFIX,12377.cn
-DOMAIN-SUFFIX,12315.cn
-DOMAIN-SUFFIX,cyberpolice.cn
-DOMAIN-SUFFIX,12321.cn
