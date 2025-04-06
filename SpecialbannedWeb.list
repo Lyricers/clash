@@ -160,7 +160,7 @@ DOMAIN-SUFFIX,voachinese.com
 DOMAIN-SUFFIX,dwnews.com
 DOMAIN-SUFFIX,zh.bitterwinter.org
 
-# 以下来自TAG机场
+# 以下来自TAG机场（有删改）
 # 法轮功及相关组织/媒体
 DOMAIN-SUFFIX,appledaily.com
 DOMAIN-SUFFIX,epochtimes.com
@@ -200,16 +200,6 @@ DOMAIN-SUFFIX,gash.com
 DOMAIN-SUFFIX,mycard.com
 DOMAIN-SUFFIX,mycard.tw
 
-# 360与金山安全服务
-DOMAIN-SUFFIX,360.cn
-DOMAIN-SUFFIX,360.com
-DOMAIN-SUFFIX,so.com
-DOMAIN-SUFFIX,rising.com
-DOMAIN-SUFFIX,kingsoft.com
-DOMAIN-SUFFIX,duba.net
-DOMAIN-SUFFIX,xindubawukong.com
-DOMAIN-SUFFIX,jinshanduba.com
-
 # 矿池服务和加密货币相关
 DOMAIN-KEYWORD,civitai
 DOMAIN-KEYWORD,sigmapool
@@ -243,16 +233,11 @@ DOMAIN-KEYWORD,slushpool
 DOMAIN-KEYWORD,marathondh
 DOMAIN-SUFFIX,pool.btc
 
-# 敏感新闻/政治/宗教类媒体
-DOMAIN-SUFFIX,shinhan.com
-DOMAIN-SUFFIX,gov.cn
-DOMAIN-KEYWORD,12377
-DOMAIN-KEYWORD,12315
+# 敏感新闻/政治/宗教类媒体（非大陆或邪教类）
 DOMAIN-SUFFIX,talk.news.pts.org
 DOMAIN-SUFFIX,creaders.net
 DOMAIN-SUFFIX,zhuichaguoji.org
 DOMAIN-SUFFIX,efcc.org
-DOMAIN-SUFFIX,cyberpolice.cn
 DOMAIN-SUFFIX,aboluowang.com
 DOMAIN-SUFFIX,tuidang.org
 DOMAIN-SUFFIX,mingjingnews.com
@@ -261,6 +246,97 @@ DOMAIN-SUFFIX,xinsheng.net
 DOMAIN-SUFFIX,bannedbook.net
 DOMAIN-SUFFIX,epochweekly.com
 DOMAIN-SUFFIX,secretchina.com
-DOMAIN-SUFFIX,12321.cn
 DOMAIN-SUFFIX,cn.rfi.fr
-DOMAIN-SUFFIX,110.qq.com
+
+# 匹配所有非中国大陆的政府站点（排除 .gov.cn）
+DOMAIN-SUFFIX,gov
+DOMAIN-KEYWORD,.gov.
+# 排除大陆政府网站（可单独 REJECT）
+DOMAIN-SUFFIX,gov.cn
+
+# 台湾政府
+DOMAIN-SUFFIX,gov.tw
+DOMAIN-SUFFIX,edu.tw
+
+# 日本政府
+DOMAIN-SUFFIX,go.jp
+
+# 韩国政府
+DOMAIN-SUFFIX,go.kr
+
+# 英国政府
+DOMAIN-SUFFIX,gov.uk
+DOMAIN-SUFFIX,parliament.uk
+DOMAIN-SUFFIX,mod.uk
+
+# 加拿大政府
+DOMAIN-SUFFIX,gc.ca
+DOMAIN-SUFFIX,canada.ca
+
+# 澳大利亚政府
+DOMAIN-SUFFIX,gov.au
+DOMAIN-SUFFIX,aph.gov.au
+
+# 美国政府和组织
+DOMAIN-SUFFIX,usa.gov
+DOMAIN-SUFFIX,state.gov
+DOMAIN-SUFFIX,whitehouse.gov
+DOMAIN-SUFFIX,house.gov
+DOMAIN-SUFFIX,senate.gov
+DOMAIN-SUFFIX,nasa.gov
+DOMAIN-SUFFIX,uscourts.gov
+DOMAIN-SUFFIX,nsa.gov
+DOMAIN-SUFFIX,cia.gov
+DOMAIN-SUFFIX,sec.gov
+DOMAIN-SUFFIX,energy.gov
+DOMAIN-SUFFIX,cdc.gov
+
+# 欧洲各国
+DOMAIN-SUFFIX,gov.fr
+DOMAIN-SUFFIX,gouv.fr
+DOMAIN-SUFFIX,gov.it
+DOMAIN-SUFFIX,gov.de
+DOMAIN-SUFFIX,gov.es
+DOMAIN-SUFFIX,gov.ie
+DOMAIN-SUFFIX,gov.pt
+DOMAIN-SUFFIX,europa.eu
+
+# 银行与国际金融组织
+DOMAIN-SUFFIX,bankofamerica.com
+DOMAIN-SUFFIX,chase.com
+DOMAIN-SUFFIX,wellsfargo.com
+DOMAIN-SUFFIX,hsbc.com
+DOMAIN-SUFFIX,citibank.com
+DOMAIN-SUFFIX,goldmansachs.com
+DOMAIN-SUFFIX,morganstanley.com
+DOMAIN-SUFFIX,barclays.co.uk
+DOMAIN-SUFFIX,natwest.com
+DOMAIN-SUFFIX,td.com
+DOMAIN-SUFFIX,anz.com
+DOMAIN-SUFFIX,rbc.com
+DOMAIN-SUFFIX,db.com
+DOMAIN-SUFFIX,bnpparibas.com
+DOMAIN-SUFFIX,credit-suisse.com
+DOMAIN-SUFFIX,ubs.com
+DOMAIN-SUFFIX,scotiabank.com
+DOMAIN-SUFFIX,standardchartered.com
+
+# 金融监管与国际组织
+DOMAIN-SUFFIX,imf.org
+DOMAIN-SUFFIX,worldbank.org
+DOMAIN-SUFFIX,swift.com
+DOMAIN-SUFFIX,bis.org
+DOMAIN-SUFFIX,finra.org
+DOMAIN-SUFFIX,fca.org.uk
+DOMAIN-SUFFIX,sec.gov
+DOMAIN-SUFFIX,mas.gov.sg
+DOMAIN-SUFFIX,eba.europa.eu
+DOMAIN-SUFFIX,ecb.europa.eu
+DOMAIN-SUFFIX,oecd.org
+
+# 排除中国大陆相关的政府域名（可设置为绕过或 REJECT）
+DOMAIN-SUFFIX,gov.cn
+DOMAIN-SUFFIX,12377.cn
+DOMAIN-SUFFIX,12315.cn
+DOMAIN-SUFFIX,cyberpolice.cn
+DOMAIN-SUFFIX,12321.cn
