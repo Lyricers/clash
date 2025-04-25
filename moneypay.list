@@ -1,0 +1,150 @@
+# PayPal
+DOMAIN-SUFFIX,paypal.com
+DOMAIN-SUFFIX,paypalobjects.com
+
+# Stripe
+DOMAIN-SUFFIX,stripe.com
+DOMAIN-SUFFIX,stripe.network
+
+# Visa
+DOMAIN-SUFFIX,visa.com
+DOMAIN-SUFFIX,visaeurope.com
+
+# Mastercard
+DOMAIN-SUFFIX,mastercard.com
+DOMAIN-SUFFIX,mastercardservices.com
+
+# American Express
+DOMAIN-SUFFIX,americanexpress.com
+DOMAIN-SUFFIX,aexp-static.com
+
+# Discover
+DOMAIN-SUFFIX,discover.com
+
+# Wise (TransferWise)
+DOMAIN-SUFFIX,wise.com
+DOMAIN-SUFFIX,transferwise.com
+
+# Revolut
+DOMAIN-SUFFIX,revolut.com
+
+# Payoneer
+DOMAIN-SUFFIX,payoneer.com
+
+# Skrill
+DOMAIN-SUFFIX,skrill.com
+
+# Neteller
+DOMAIN-SUFFIX,neteller.com
+
+# Western Union
+DOMAIN-SUFFIX,westernunion.com
+
+# WorldRemit
+DOMAIN-SUFFIX,worldremit.com
+
+# Remitly
+DOMAIN-SUFFIX,remitly.com
+
+# UnionPay Intl
+DOMAIN-SUFFIX,unionpayintl.com
+
+# Square
+DOMAIN-SUFFIX,squareup.com
+DOMAIN-SUFFIX,squarecdn.com
+
+# Apple Pay
+DOMAIN-SUFFIX,apple-pay-gateway.apple.com
+
+# Google Pay
+DOMAIN-SUFFIX,pay.google.com
+
+# Crypto.com
+DOMAIN-SUFFIX,crypto.com
+
+# Coinbase
+DOMAIN-SUFFIX,coinbase.com
+
+# Binance
+DOMAIN-SUFFIX,binance.com
+DOMAIN-SUFFIX,binance.us
+
+# Kraken
+DOMAIN-SUFFIX,kraken.com
+
+# Gemini
+DOMAIN-SUFFIX,gemini.com
+
+# Alipay (Intl)
+DOMAIN-SUFFIX,alipay.com
+DOMAIN-SUFFIX,intl.alipay.com
+
+# WeChat Pay (Intl)
+DOMAIN-SUFFIX,pay.weixin.qq.com
+DOMAIN-SUFFIX,wx.tenpay.com
+
+# LINE Pay
+DOMAIN-SUFFIX,linepay.com
+
+# Paytm
+DOMAIN-SUFFIX,paytm.com
+
+# PhonePe
+DOMAIN-SUFFIX,phonepe.com
+
+# Razorpay
+DOMAIN-SUFFIX,razorpay.com
+
+# GCash
+DOMAIN-SUFFIX,gcash.com
+DOMAIN-SUFFIX,globe.com.ph
+
+# Maya / PayMaya
+DOMAIN-SUFFIX,maya.ph
+DOMAIN-SUFFIX,paymaya.com
+
+# TrueMoney
+DOMAIN-SUFFIX,truemoney.com.kh
+DOMAIN-SUFFIX,truemoney.com.mm
+DOMAIN-SUFFIX,truemoney.co.th
+
+# MoMo (Vietnam)
+DOMAIN-SUFFIX,momo.vn
+
+# ZaloPay
+DOMAIN-SUFFIX,zalopay.vn
+
+# Toss
+DOMAIN-SUFFIX,toss.im
+
+# KakaoPay
+DOMAIN-SUFFIX,kakaopay.com
+
+# JKO Pay
+DOMAIN-SUFFIX,jkopay.app
+DOMAIN-SUFFIX,jkopay.com
+
+# ECPay (Taiwan)
+DOMAIN-SUFFIX,ecpay.com.tw
+
+# Mercado Pago
+DOMAIN-SUFFIX,mercadopago.com
+DOMAIN-SUFFIX,mercadopago.com.ar
+DOMAIN-SUFFIX,mercadopago.com.br
+DOMAIN-SUFFIX,mercadopago.cl
+DOMAIN-SUFFIX,mercadopago.com.mx
+
+# Pix (Brazil)
+DOMAIN-SUFFIX,pix.br
+
+# Paystack
+DOMAIN-SUFFIX,paystack.com
+
+# Flutterwave
+DOMAIN-SUFFIX,flutterwave.com
+
+# STC Pay
+DOMAIN-SUFFIX,stcpay.com.sa
+
+# mada (Saudi Arabia)
+DOMAIN-SUFFIX,mada.com.sa
