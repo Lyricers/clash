@@ -1,24 +1,31 @@
 # Discord 主要域名
 DOMAIN,discord.com
 DOMAIN,discordapp.com
+DOMAIN-KEYWORD,discord
 
 # X (原 Twitter) 主要域名
 DOMAIN,x.com
+DOMAIN-KEYWORD,twitter
 
 # Reddit 主要域名
 DOMAIN,reddit.com
+DOMAIN-KEYWORD,reddit
 
 # Snapchat 主要域名
 DOMAIN,snapchat.com
+DOMAIN-KEYWORD,snapchat
 
 # Instagram 主要域名
 DOMAIN,instagram.com
+DOMAIN-KEYWORD,instagram
 
 # Facebook 主要域名
 DOMAIN,facebook.com
+DOMAIN-KEYWORD,facebook
 
 # Twitch 主要域名
 DOMAIN,twitch.tv
+DOMAIN-KEYWORD,twitch
 
 # 可能用于 Twitch 的视频流
 DOMAIN,video.twitch.tv
@@ -39,5 +46,16 @@ DOMAIN,api.twitter.com
 DOMAIN,oauth.facebook.com
 DOMAIN,oauth.instagram.com
 
-DOMAIN,whatsapp.net
+# WhatsApp 主要域名
 DOMAIN,whatsapp.com
+DOMAIN,web.whatsapp.com
+DOMAIN-KEYWORD,whatsapp
+
+# 可能用于 WhatsApp 的服务器
+DOMAIN,api.whatsapp.com
+
+# 可能用于 WhatsApp 语音和视频通话的服务器
+DOMAIN,calls.whatsapp.net
+
+# 可能用于 WhatsApp 消息同步的服务器
+DOMAIN,sync.whatsapp.net
