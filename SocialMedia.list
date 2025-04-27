@@ -1,0 +1,40 @@
+# Discord 主要域名
+DOMAIN,discord.com
+DOMAIN,discordapp.com
+
+# X (原 Twitter) 主要域名
+DOMAIN,x.com
+
+# Reddit 主要域名
+DOMAIN,reddit.com
+
+# Snapchat 主要域名
+DOMAIN,snapchat.com
+
+# Instagram 主要域名
+DOMAIN,instagram.com
+
+# Facebook 主要域名
+DOMAIN,facebook.com
+
+# Twitch 主要域名
+DOMAIN,twitch.tv
+
+# 可能用于 Twitch 的视频流
+DOMAIN,video.twitch.tv
+
+# 可能用于 Facebook 的图片服务器
+DOMAIN,fbcdn.net
+
+# 可能用于 Instagram 的图片服务器
+DOMAIN,instagram-fbstatic-a.akamaihd.net
+
+# 直接匹配 Discord 子域名（例如用于语音、消息传递等）
+DOMAIN,cdn.discordapp.com
+
+# 可能用于 X 的认证相关域名
+DOMAIN,api.twitter.com
+
+# 用于 Facebook 和 Instagram 的身份验证
+DOMAIN,oauth.facebook.com
+DOMAIN,oauth.instagram.com
