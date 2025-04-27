@@ -75,14 +75,6 @@ DOMAIN-SUFFIX,kraken.com
 # Gemini
 DOMAIN-SUFFIX,gemini.com
 
-# Alipay (Intl)
-DOMAIN-SUFFIX,alipay.com
-DOMAIN-SUFFIX,intl.alipay.com
-
-# WeChat Pay (Intl)
-DOMAIN-SUFFIX,pay.weixin.qq.com
-DOMAIN-SUFFIX,wx.tenpay.com
-
 # LINE Pay
 DOMAIN-SUFFIX,linepay.com
 
