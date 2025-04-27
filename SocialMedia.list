@@ -38,3 +38,6 @@ DOMAIN,api.twitter.com
 # 用于 Facebook 和 Instagram 的身份验证
 DOMAIN,oauth.facebook.com
 DOMAIN,oauth.instagram.com
+
+DOMAIN,whatsapp.net
+DOMAIN,whatsapp.com
