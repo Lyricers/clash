@@ -10,6 +10,12 @@ const excludeKeywords = [
   /网址/, /网站/, /充值/, /更新/, /地址/, /国内/, /永久/, /教学/, /com/, /www/, /69/, /购买/
 ];
 
+// 关键词对应备注
+const remarkKeywords = [
+  { key: /6云/, value: "69Yun" },
+  { key: /赔钱/, value: "PeiQ" },
+];
+
 // 额外备注关键词
 const extraRemarks = [
   { key: /测试|Test/i, value: "Test" },
