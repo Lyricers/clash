@@ -13,6 +13,7 @@ DOMAIN-SUFFIX,xboxlive.com
 DOMAIN,play.inpvp.net
 DOMAIN,geo.hivebedrock.network
 DOMAIN,multiplayer.minecraft.net
+DOMAIN,mc.hypixel.net
 
 # PlayFab API（部分 Minecraft 服务器依赖）
 DOMAIN,20ca2.playfabapi.com
