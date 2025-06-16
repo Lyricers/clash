@@ -5,6 +5,9 @@ DOMAIN-SUFFIX,minecraft.net
 DOMAIN-SUFFIX,minecraft-services.net
 DOMAIN-SUFFIX,mktpl.minecraft-services.net
 DOMAIN-SUFFIX,playfabapi.com
+DOMAIN-KEYWORD,mojang
+DOMAIN-KEYWORD,minecraft
+DOMAIN-KEYWORD,xbox
 
 # Xbox Live 认证及联机
 DOMAIN-SUFFIX,xboxlive.com
