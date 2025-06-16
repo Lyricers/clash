@@ -53,6 +53,7 @@ DOMAIN-SUFFIX,playstation.net
 DOMAIN-SUFFIX,playstationnetwork.com
 DOMAIN-SUFFIX,sony.com
 DOMAIN-SUFFIX,sonyentertainmentnetwork.com
+
 # NAME: Game
 # AUTHOR: blackmatrix7
 # REPO: https://github.com/blackmatrix7/ios_rule_script
@@ -63,6 +64,24 @@ DOMAIN-SUFFIX,sonyentertainmentnetwork.com
 # IP-CIDR: 46
 # TOTAL: 597
 payload:
+  - DOMAIN-SUFFIX,xboxlive.com
+  - DOMAIN-SUFFIX,xbox.com
+  - DOMAIN-SUFFIX,xboxservices.com
+  - DOMAIN-SUFFIX,live.com
+  - DOMAIN-SUFFIX,login.live.com
+  - DOMAIN-SUFFIX,minecraft.net
+  - DOMAIN-SUFFIX,mojang.com
+  - DOMAIN-SUFFIX,microsoft.com
+  - DOMAIN-SUFFIX,minecraftservices.com
+  - DOMAIN,realms.minecraft.net
+  - DOMAIN,pocket.realms.minecraft.net
+  - DOMAIN,clientconfig.minecraft.net
+  - DOMAIN,session.minecraft.net
+  - DOMAIN,api.minecraftservices.com
+  - DOMAIN,textures.minecraft.net
+  - DOMAIN,skins.minecraft.net
+  - DOMAIN-SUFFIX,playfabapi.com
+  - DOMAIN-SUFFIX,akadns.net
   - DOMAIN,eaasserts-a.akamaihd.net
   - DOMAIN,originasserts.akamaized.net
   - DOMAIN,gog.salesmanago.com
