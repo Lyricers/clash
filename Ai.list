@@ -104,3 +104,6 @@ IP-CIDR,64.23.132.171/32
 # IP-ASN
 IP-ASN,14061
 IP-ASN,20473
+
+DOMAIN,cdn.usefathom.com
+DOMAIN-SUFFIX,anthropic.com
