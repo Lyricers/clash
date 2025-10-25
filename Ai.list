@@ -36,9 +36,13 @@ DOMAIN,sydney.bing.com
 DOMAIN,www.bing.com
 DOMAIN,www.deepseek.io
 DOMAIN,deepseek.io
+DOMAIN,claude.ai
+DOMAIN,www.claudeusercontent.com
 
 # DOMAIN-SUFFIX
 DOMAIN-SUFFIX,ai.com
+DOMAIN-SUFFIX,claude.ai
+DOMAIN-SUFFIX,claudeusercontent.com
 DOMAIN-SUFFIX,algolia.net
 DOMAIN-SUFFIX,apis.google.com
 DOMAIN-SUFFIX,auth0.com
@@ -89,6 +93,9 @@ DOMAIN-KEYWORD,developerprofiles
 DOMAIN-KEYWORD,generativelanguage
 DOMAIN-KEYWORD,openai
 DOMAIN-KEYWORD,openaicom-api
+DOMAIN-KEYWORD,claude
+DOMAIN-KEYWORD,claudeusercontent
+DOMAIN-KEYWORD,ai
 
 # IP-CIDR
 IP-CIDR,24.199.123.28/32
