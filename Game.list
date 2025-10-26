@@ -9,6 +9,9 @@ DOMAIN-KEYWORD,mojang
 DOMAIN-KEYWORD,minecraft
 DOMAIN-KEYWORD,xbox
 
+#  Steam的CDN域名
+DOMAIN-KEYWORD,steamcontent.com
+
 # Xbox Live 认证及联机
 DOMAIN-SUFFIX,xboxlive.com
 
