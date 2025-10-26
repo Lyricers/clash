@@ -48,7 +48,6 @@ DOMAIN-SUFFIX,whatismyipaddress.com
 DOMAIN-SUFFIX,whoer.net
 DOMAIN-KEYWORD,speedtest
 DOMAIN-KEYWORD,ipjianche
-DOMAIN-KEYWORD,fast
 DOMAIN-KEYWORD,ookla
 DOMAIN-KEYWORD,testmy
 DOMAIN-KEYWORD,speed.cloudflare
@@ -87,4 +86,3 @@ DOMAIN-KEYWORD,回程
 DOMAIN-KEYWORD,traceroute
 DOMAIN-KEYWORD,ping.pe
 DOMAIN-KEYWORD,speed.cloudflare
-DOMAIN-KEYWORD,speed
